@@ -21,6 +21,7 @@ body {
   height: fit-content;
   width: 100vw;
   overflow-x: hidden;
+  background-position: center;
   margin: auto;
   background-size: cover;
 }
@@ -42,6 +43,8 @@ body {
   background-color: var(--text-color-light);
   border-radius: 12px;
   padding: 10px 20px;
+  color: #fff;
+  font-weight: 500;
 }
 
 .home-info {
@@ -244,6 +247,7 @@ body {
   height: 500px;
   background-repeat: no-repeat;
   color: #fff;
+  background-position: center;
   background-size: cover;
 }
 
@@ -308,10 +312,17 @@ body {
 }
 
 .community img {
-  width: 135%;
+  width: 200%;
   margin: auto;
   margin-bottom: -50px;
 }
+
+@media screen and (max-width: 768px){
+  .community img{
+    margin-bottom: 0;
+  }
+}
+
 
 .community .box {
   background-color: transparent !important;
