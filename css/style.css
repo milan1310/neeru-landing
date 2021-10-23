@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Kalam:wght@300;400&family=Kavivanar&family=WindSong:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Kalam:wght@300;400&family=Kavivanar&family=WindSong:wght@500&display=swap");
 
 :root {
   --background-color: #d5ebeb;
@@ -11,7 +11,12 @@
 /* home */
 body {
   overflow-x: hidden;
-  font-family: 'Kalam', cursive;
+  font-family: "Kalam", cursive;
+}
+
+@font-face {
+  font-family: sign;
+  src: url(../font/SCRIPTIN.ttf);
 }
 
 .home {
@@ -62,7 +67,6 @@ body {
   color: var(--text-color-light);
 }
 
-
 .home-bottom {
   background-color: var(--main-color);
   color: var(--background-color2);
@@ -79,32 +83,38 @@ body {
   width: 100%;
 }
 
-.card1{
+.card1 {
   background-image: url(../img/cards/william-rouse-HlKI1Sf-w2Q-unsplash.jpg);
 }
 
-.card2{
+.card2 {
   background-image: url(../img/cards/sincerely-media-c1YrcFYW66s-unsplash.jpg);
 }
 
-.card3{
+.card3 {
   background-image: url(../img/cards/junior-reis-0FluoIcN0G8-unsplash.jpg);
 }
 
-.card4{
+.card4 {
   background-image: url(../img/cards/ian-stauffer-bH7kZ0yazB0-unsplash.jpg);
 }
 
-.card5{
+.card5 {
   background-image: url(../img/cards/christina-wocintechchat-com-VpcgTEKerEQ-unsplash.jpg);
 }
 
-.card6{
+.card6 {
   background-image: url(../img/cards/thumsup.jpg);
 }
 
 .card-info {
-  background: linear-gradient(to right, #778d43b2, #88a04fbb, #f1adada9, #f1c6c6b7);
+  background: linear-gradient(
+    to right,
+    #778d43b2,
+    #88a04fbb,
+    #f1adada9,
+    #f1c6c6b7
+  );
   border: none;
   height: 100%;
 }
@@ -122,11 +132,14 @@ body {
   padding: 8px;
 }
 
-
-
-
 .cards__single {
-  background: linear-gradient(to right, #778d43b2, #88a04fbb, #f1adada9, #f1c6c6b7);
+  background: linear-gradient(
+    to right,
+    #778d43b2,
+    #88a04fbb,
+    #f1adada9,
+    #f1c6c6b7
+  );
   cursor: pointer;
   text-align: center;
   -webkit-transition: transform 0.6s;
@@ -165,29 +178,6 @@ body {
   left: 0;
   top: 0px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .upper-publication {
   background-color: var(--background-color);
   width: 100vw;
@@ -241,7 +231,7 @@ body {
   margin: auto;
 }
 
-.transformation-journey-quote{
+.transformation-journey-quote {
   padding-top: 100px;
   background: url(../img/travel.jpg);
   height: 500px;
@@ -251,26 +241,24 @@ body {
   background-size: cover;
 }
 
-.transformation-journey-quote h1{
+.transformation-journey-quote h1 {
   color: var(--main-color);
 }
 
 .box {
   background-color: var(--main-color);
   max-width: 250px;
-  width: 100%;
+  /* width: 100%; */
   min-height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  width: 100%;
   margin: auto;
-  box-shadow: 7px 7px 17px #9ecfcf,
-    -7px -7px 17px #fff;
+  box-shadow: 7px 7px 17px #9ecfcf, -7px -7px 17px #fff;
 }
 
-.box h4{
+.box h4 {
   font-weight: 900;
 }
 
@@ -286,25 +274,25 @@ body {
   margin: auto;
 }
 
-.course-steps{
+.course-steps {
   padding: 10px 0;
   background: url(../img/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg);
   background-repeat: no-repeat;
-  background-size:cover ;
+  background-size: cover;
 }
 
-.slider img{
+.slider img {
   border-radius: 10px;
   height: 200px;
   padding: 0 5px;
   /* width: 300px; */
 }
 
-.abt-img{
+.abt-img {
   border-radius: 8px;
   box-shadow: 16px -17px 0px -5px #fcc9be;
--webkit-box-shadow: 16px -17px 0px -5px #fcc9be;
--moz-box-shadow: 16px -17px 0px -5px #fcc9be;
+  -webkit-box-shadow: 16px -17px 0px -5px #fcc9be;
+  -moz-box-shadow: 16px -17px 0px -5px #fcc9be;
 }
 /* community */
 .community {
@@ -317,12 +305,16 @@ body {
   margin-bottom: -50px;
 }
 
-@media screen and (max-width: 768px){
-  .community img{
+@media screen and (max-width: 768px) {
+  .community img {
     margin-bottom: 0;
+    width: 140%;
+    margin-top: -35px;
+  }
+  .upper-publication-content img {
+    height: 100%;
   }
 }
-
 
 .community .box {
   background-color: transparent !important;
