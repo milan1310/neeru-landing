@@ -327,6 +327,7 @@ body {
   display: flex;
   max-width: 450px;
   max-height: 250px;
+  z-index: 50;
 }
 
 .community .col-md-6 {
