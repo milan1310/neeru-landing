@@ -16,7 +16,7 @@ body {
 
 @font-face {
   font-family: sign;
-  src: url(../font/SCRIPTIN.ttf);
+  src: url(../font/4/GreatDayBoldPersonalUse-LBB3.ttf);
 }
 
 .home {
@@ -42,6 +42,7 @@ body {
   width: 100%;
   overflow: hidden;
   border-radius: 20px;
+  margin-top: 127px;
 }
 
 .home-btn {
@@ -64,7 +65,8 @@ body {
 .home-info h4,
 .home-info .p1,
 .home-bottom h5 {
-  color: var(--text-color-light);
+  color: var(--text-color-dark);
+  /* font-weight: 520; */
 }
 
 .home-bottom {
