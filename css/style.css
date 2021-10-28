@@ -130,6 +130,8 @@ body {
 }
 
 .card-info {
+  color: #000;
+
   background: linear-gradient(
     to right,
     #778d43b2,
@@ -257,18 +259,28 @@ body {
 }
 
 .transformation-journey-quote {
-  padding-top: 100px;
   background: url(../img/travel.jpg);
+  padding-top: 100px;
   height: 500px;
   background-repeat: no-repeat;
   color: #fff;
-  background-position: center;
+  background-position: right;
   background-size: cover;
 }
 
 .transformation-journey-quote h1 {
   color: var(--main-color);
 }
+
+.transformation-journey-quote a{
+  margin-left: 30%;
+}
+
+@media screen and (max-width: 1090px){
+  .transformation-journey-quote a {
+    margin-left: 20%;
+  }
+} 
 
 .box {
   background-color: var(--main-color);
@@ -342,7 +354,12 @@ body {
   .home-content img{
     margin-top: -17px;
   }
+  .transformation-journey-quote a {
+    margin: 0 auto;
+  }
 }
+
+
 
 
 .community .box {
