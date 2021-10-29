@@ -8,29 +8,11 @@
   --background-color2: #338282;
 }
 
-.card-info::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Track */
-.card-info::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px var(--background-color2);
-  border-radius: 5px;
-}
-
-/* Handle */
-.card-info::-webkit-scrollbar-thumb {
-  background: var(--background-color2);
-  border-radius: 5px;
-}
-
 /* home */
 body {
   overflow-x: hidden;
   font-family: "Kalam", cursive;
 }
-
-
 
 @font-face {
   font-family: sign;
@@ -60,7 +42,7 @@ body {
   width: 100%;
   overflow: hidden;
   border-radius: 20px;
-  margin-top: 192px;
+  margin-top: 127px;
 }
 
 .home-btn {
@@ -103,8 +85,7 @@ body {
   min-height: 250px;
   width: 100%;
 }
-
-.cards li {
+.cards li{
   list-style: none;
 }
 
@@ -117,7 +98,7 @@ body {
 }
 
 .card3 {
-  background-image: url(../img/cards/junior-reis-0FluoIcN0G8-unsplash.png);
+  background-image: url(../img/cards/junior-reis-0FluoIcN0G8-unsplash.jpg);
 }
 
 .card4 {
@@ -133,17 +114,16 @@ body {
 }
 
 .card-info {
-  color: #000;
-
-  background: linear-gradient(to right,
-      #778d43b2,
-      #88a04fbb,
-      #f1adada9,
-      #f1c6c6b7);
+  background: linear-gradient(
+    to right,
+    #778d43b2,
+    #88a04fbb,
+    #f1adada9,
+    #f1c6c6b7
+  );
   border: none;
   height: 100%;
   min-height: 250px;
-  overflow-y: auto;
 }
 
 .card-info p {
@@ -161,11 +141,13 @@ body {
 }
 
 .cards__single {
-  background: linear-gradient(to right,
-      #778d43b2,
-      #88a04fbb,
-      #f1adada9,
-      #f1c6c6b7);
+  background: linear-gradient(
+    to right,
+    #778d43b2,
+    #88a04fbb,
+    #f1adada9,
+    #f1c6c6b7
+  );
   cursor: pointer;
   text-align: center;
   -webkit-transition: transform 0.6s;
@@ -204,7 +186,6 @@ body {
   left: 0;
   top: 0px;
 }
-
 .upper-publication {
   background-color: var(--background-color);
   width: 100vw;
@@ -259,27 +240,17 @@ body {
 }
 
 .transformation-journey-quote {
-  background: url(../img/travel.jpg);
   padding-top: 100px;
+  background: url(../img/travel.jpg);
   height: 500px;
   background-repeat: no-repeat;
   color: #fff;
-  background-position: right;
+  background-position: center;
   background-size: cover;
 }
 
 .transformation-journey-quote h1 {
   color: var(--main-color);
-}
-
-.transformation-journey-quote a {
-  margin-left: 30%;
-}
-
-@media screen and (max-width: 1090px) {
-  .transformation-journey-quote a {
-    margin-left: 20%;
-  }
 }
 
 .box {
@@ -313,7 +284,7 @@ body {
 
 .course-steps {
   padding: 10px 0;
-  background: url(../img/hand-painted-watercolor-pastel-sky-background_23-2148902771\ 1\ \(1\).png);
+  background: url(../img/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -331,7 +302,6 @@ body {
   -webkit-box-shadow: 16px -17px 0px -5px #fcc9be;
   -moz-box-shadow: 16px -17px 0px -5px #fcc9be;
 }
-
 /* community */
 .community {
   background-color: var(--background-color2);
@@ -349,22 +319,10 @@ body {
     width: 140%;
     margin-top: -35px;
   }
-
   .upper-publication-content img {
     height: 100%;
   }
-
-  .home-content img {
-    margin-top: -17px;
-  }
-
-  .transformation-journey-quote a {
-    margin: 0 auto;
-  }
 }
-
-
-
 
 .community .box {
   background-color: transparent !important;
@@ -383,25 +341,4 @@ body {
 .community .col-md-6 {
   display: flex;
   align-items: center;
-}
-
-/* stair */
-.stair-img img {
-  width: 100vw;
-  margin: auto;
-}
-
-.stair-content {
-  display: none;
-
-}
-
-@media screen and (max-width: 600px) {
-  .stair-content {
-    display: block;
-  }
-
-  .stair-img {
-    display: none;
-  }
 }
